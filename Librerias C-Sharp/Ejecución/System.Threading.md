@@ -2,7 +2,7 @@
 
 `System.Threading` proporciona las clases e interfaces que permiten la programación multihilo de bajo nivel. Mientras que las `Tasks` se encargan de *qué* se debe hacer de forma asíncrona, esta librería se encarga del *cómo* se ejecutan los hilos (`Thread`) y de las herramientas de sincronización para evitar condiciones de carrera (*race conditions*).
 
-## 3. Casos de Uso Comunes
+#### Casos de Uso Comunes
 
 *   **Control Total del Hilo:** Crear hilos persistentes que vivan durante toda la ejecución de la app (ej. un hilo de renderizado o de monitoreo).
 *   **Sincronización de Recursos:** Bloquear variables o archivos para que solo un hilo pueda modificarlos a la vez.
@@ -93,7 +93,7 @@ Interlocked.Increment(ref contador);
 Interlocked.Exchange(ref contador, 100);
 ```
 
-## 6. Buenas Prácticas y Consideraciones
+## Buenas Prácticas y Consideraciones
 
 1.  **Prefiere `Tasks` sobre `Thread`:** Crear un `Thread` manualmente es costoso en términos de memoria y CPU. Para la mayoría de las tareas, usa `Task.Run` (TPL), que utiliza el `ThreadPool` de forma eficiente. Usa `Thread` solo si necesitas control absoluto.
 2.  **Cuidado con los Deadlocks (Interbloqueos):** Ocurren cuando el Hilo A espera al Hilo B, y el Hilo B espera al Hilo A. Ninguno avanza y el programa se congela. Siempre bloquea los objetos en el mismo orden.
