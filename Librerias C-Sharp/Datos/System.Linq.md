@@ -102,5 +102,3 @@ if (ana != null) { /* Hacer algo con Ana */ }
 2.  **No abuses de LINQ en bucles críticos:** Aunque es muy elegante, LINQ es ligeramente más lento que un bucle `for` tradicional debido a la creación de objetos internos. En el 99% de los casos no importa, pero en videojuegos o sistemas de ultra-alto rendimiento, ten cuidado.
 3.  **Cuidado con múltiples enumeraciones:** Si haces `var consulta = lista.Where(...)` y luego usas `consulta.Count()` y después `foreach(var x in consulta)`, estarás filtrando la lista **dos veces**. Si vas a usar el resultado varias veces, termina la consulta con `.ToList()`.
 4.  **Usa `FirstOrDefault` en lugar de `First`:** `First()` lanza una excepción si no encuentra nada, lo que puede romper tu programa. `FirstOrDefault()` devuelve `null`, que es mucho más fácil de manejar con un `if`.
-
-¿Qué tal te ha parecido LINQ? Es una herramienta increíblemente potente. Si estás listo, podríamos seguir con **`System.Text.Json`** para aprender a manejar datos de APIs, o quizás **`System.Threading.Tasks`** para ver el famoso `async/await`. ¿Cuál prefieres?
