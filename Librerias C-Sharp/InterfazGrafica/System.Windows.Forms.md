@@ -2,7 +2,7 @@
 
 `System.Windows.Forms` contiene las clases para crear aplicaciones de escritorio que aprovechan las funciones de la interfaz de usuario nativa de Windows. Se basa en un modelo **orientado a eventos**: el programa "espera" a que el usuario haga algo (clic, escribir, mover el mouse) y reacciona ejecutando una función específica.
 
-## Casos de Uso Comunes
+#### Casos de Uso Comunes
 
 *   **Aplicaciones de Gestión de Datos:** Software para inventarios, puntos de venta o administración de clientes.
 *   **Herramientas de Configuración:** Paneles de control para hardware o servicios.
