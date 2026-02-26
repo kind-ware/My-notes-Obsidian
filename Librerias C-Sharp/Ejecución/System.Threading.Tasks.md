@@ -101,17 +101,3 @@ try {
 3.  **Sufijo "Async":** Por convención en .NET, todos los métodos que devuelven una `Task` deben terminar con el nombre `Async` (ej. `LeerArchivoAsync`).
 4.  **Usa `Task.Run` solo para CPU:** No uses `Task.Run` para operaciones de entrada/salida (como bases de datos). Usa las versiones asíncronas nativas del framework (como `ExecuteReaderAsync`). Reservamos `Task.Run` para cálculos matemáticos o procesamiento de datos pesado.
 5.  **ValueTask:** Para métodos que se llaman millones de veces y que a veces ya tienen el resultado listo (sin esperar), existe `ValueTask<T>`, que es más ligero para la memoria RAM que una `Task` normal.
-
-Has cubierto:
-1.  **System.IO** (Archivos).
-2.  **System.Collections.Generic** (Listas y Diccionarios).
-3.  **System.Linq** (Consultas de datos).
-4.  **System.Net.Http** (Web/APIs).
-5.  **System.Text.Json** (JSON).
-6.  **System.Threading.Tasks** (Asincronía).
-
-**¿Qué te gustaría hacer ahora?** 
-* Podemos explorar librerías de **Seguridad/Criptografía** (`System.Security.Cryptography`).
-* Ver cómo manejar **Fechas y Tiempos** con precisión (`System.DateTime` y librerías relacionadas).
-* O quizás quieras que hagamos un **ejercicio práctico** que combine varias de estas librerías (por ejemplo, un programa que descargue un JSON, lo procese con LINQ y guarde el resultado en un archivo). 
-
