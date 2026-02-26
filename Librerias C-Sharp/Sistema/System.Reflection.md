@@ -12,7 +12,7 @@ Es, básicamente, la capacidad de un programa de **inspeccionarse a sí mismo**.
 *   **Herramientas de Test Unitario:** Encontrar todos los métodos que tienen un atributo `[Test]` y ejecutarlos.
 *   **Inspección de Atributos:** Leer metadatos personalizados que hayas puesto sobre clases o métodos.
 
-#### Clases y Métodos Principales
+## Clases y Métodos Principales
 
 *   **`Type`:** La clase central. Representa la declaración de un tipo (clase, interfaz, etc.).
     *   `typeof(MiClase)` u `objeto.GetType()`: Obtienen el objeto `Type`.
