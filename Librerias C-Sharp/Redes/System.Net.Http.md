@@ -4,7 +4,7 @@
 
 Es el sucesor de las antiguas clases `WebClient` y `HttpWebRequest` (las cuales ya no se recomiendan en .NET moderno).
 
-## Casos de Uso Comunes
+#### Casos de Uso Comunes
 
 *   **Consumo de APIs REST:** Enviar y recibir datos (usualmente en formato JSON) desde un servidor.
 *   **Descarga de contenido:** Bajar imágenes, archivos o el código HTML de una página.
